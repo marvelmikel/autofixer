@@ -183,6 +183,9 @@
             </div>
         </div>
     </section>
+    <footer class="page-footer">
+        <p class="mb-0" style="color:black;" align="center">© Copyright 2022. Autofixer Nigeria limited.</p>
+    </footer>
     <!-- jquery-->
     <script src="{{ URL::asset('assets/js/jquery-3.5.0.min.js') }}"></script>
     <!-- Bootstrap js -->
