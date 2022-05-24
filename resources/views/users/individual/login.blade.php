@@ -39,7 +39,8 @@
                         <a href="login-31.html" class="fxt-logo"><img src="{{ URL::asset('assets/img/logo-31.png') }}" alt="Logo"></a>
                     </div>
                     <div class="fxt-transformY-50 fxt-transition-delay-4">
-                        <h1 class="fxt-main-title">We're a Digital Agency.</h1>
+                        <h1 class="fxt-main-title">QUALITY IN
+CAR DIAGNOSIS</h1>
                     </div>
                     <div class="fxt-login-option">
                         <ul>
