@@ -207,20 +207,20 @@
 					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
 					</div>
 					<div class="top-menu-left d-none d-lg-block">
-						<ul class="nav">
+						 <!-- <ul class="nav">
 						  <li class="nav-item">
 							<a class="nav-link" href="app-emailbox.html"><i class='bx bx-envelope'></i></a>
 						  </li>
 						  <li class="nav-item">
 							<a class="nav-link" href="app-chat-box.html"><i class='bx bx-message'></i></a>
 						  </li>
-						 <!-- <li class="nav-item">
+						 <li class="nav-item">
 							<a class="nav-link" href="app-fullcalender.html"><i class='bx bx-calendar'></i></a>
 						  </li>
 						  <li class="nav-item">
 							  <a class="nav-link" href="app-to-do.html"><i class='bx bx-check-square'></i></a>
-						  </li>-->
-					  </ul>
+						  </li>
+					  </ul>-->
 					 </div>
 					<div class="search-bar flex-grow-1">
 						<div class="position-relative search-bar-box">
@@ -555,12 +555,12 @@
 							<li><a class="dropdown-item" href="{{ route('individual.profile')}}"><i class="bx bx-user"></i><span>Profile</span></a></li>
 
 
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-home-circle'></i><span>Dashboard</span></a>
+							<li><a class="dropdown-item" href="{{ route('individual.dashboard')}}"><i class='bx bx-home-circle'></i><span>Dashboard</span></a>
 							</li>
 
 
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-download'></i><span>Downloads</span></a>
-							</li>
+							<!--<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-download'></i><span>Downloads</span></a>
+							</li>-->
 							<li>
 								<div class="dropdown-divider mb-0"></div>
 							</li>
