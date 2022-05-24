@@ -230,13 +230,13 @@
 					</div>
 					<div class="top-menu ms-auto">
 						<ul class="navbar-nav align-items-center">
-							<li class="nav-item mobile-search-icon">
+							<!--<li class="nav-item mobile-search-icon">
 								<a class="nav-link" href="javascript:;">	<i class='bx bx-search'></i>
 								</a>
-							</li>
+							</li>-->
 							<li class="nav-item dropdown dropdown-large">
-								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">	<i class='bx bx-category'></i>
-								</a>
+								<!--<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">	<i class='bx bx-category'></i>
+								</a>-->
 								<div class="dropdown-menu dropdown-menu-end">
 									<div class="row row-cols-3 g-3 p-3">
 										<div class="col text-center">
@@ -390,9 +390,9 @@
 								</div>
 							</li>
 							<li class="nav-item dropdown dropdown-large">
-								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+								<!--<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
 									<i class='bx bx-comment'></i>
-								</a>
+								</a>-->
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="javascript:;">
 										<div class="msg-header">
