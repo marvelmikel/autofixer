@@ -15,6 +15,8 @@
 	<link href="{{ URL::asset('u/assets/plugins/highcharts/css/highcharts.css') }}" rel="stylesheet" />
 	<link href="{{ URL::asset('u/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
 	<link href="{{ URL::asset('u/assets/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-e87f1c80-3ae1-4bf0-86a8-623e43010974"></div>
 	<!-- loader-->
 	<link href="{{ URL::asset('u/assets/css/pace.min.css') }}" rel="stylesheet" />
 	<script src="{{ URL::asset('u/assets/js/pace.min.js')}}"></script>
@@ -229,15 +231,15 @@
 							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
 						</div>
 					</div>
-					<!--<div class="top-menu ms-auto">
+					<div class="top-menu ms-auto">
 						<ul class="navbar-nav align-items-center">
-							<li class="nav-item mobile-search-icon">
+							<!--<li class="nav-item mobile-search-icon">
 								<a class="nav-link" href="javascript:;">	<i class='bx bx-search'></i>
 								</a>
-							</li>
+							</li>-->
 							<li class="nav-item dropdown dropdown-large">
-								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">	<i class='bx bx-category'></i>
-								</a>
+								<!--<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expan	<i class='bx bx-category'></i>
+								</a>-->
 								<div class="dropdown-menu dropdown-menu-end">
 									<div class="row row-cols-3 g-3 p-3">
 										<div class="col text-center">
@@ -274,9 +276,9 @@
 								</div>
 							</li>
 							<li class="nav-item dropdown dropdown-large">
-								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+								<!--<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dr-expanded="false"> <span class="alert-count">7</span>
 									<i class='bx bx-bell'></i>
-								</a>
+								</a>-->
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="javascript:;">
 										<div class="msg-header">
@@ -391,9 +393,9 @@
 								</div>
 							</li>
 							<li class="nav-item dropdown dropdown-large">
-								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+								<!--<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dr-expanded="false"> <span class="alert-count">8</span>
 									<i class='bx bx-comment'></i>
-								</a>
+								</a>-->
 								<div class="dropdown-menu dropdown-menu-end">
 									<a href="javascript:;">
 										<div class="msg-header">
@@ -405,7 +407,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-1.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-1.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
@@ -417,7 +419,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-2.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-2.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Althea Cabardo <span class="msg-time float-end">14
@@ -429,7 +431,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-3.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-3.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Oscar Garner <span class="msg-time float-end">8 min
@@ -441,7 +443,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-4.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-4.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Katherine Pechon <span class="msg-time float-end">15
@@ -453,7 +455,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-5.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-5.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Amelia Doe <span class="msg-time float-end">22 min
@@ -465,7 +467,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-6.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-6.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Cristina Jhons <span class="msg-time float-end">2 hrs
@@ -477,7 +479,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-7.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-7.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">James Caviness <span class="msg-time float-end">4 hrs
@@ -489,7 +491,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-8.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-8.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Peter Costanzo <span class="msg-time float-end">6 hrs
@@ -501,7 +503,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-9.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-9.png') }}" class="msg-avatar" alt="user avatar
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">David Buckley <span class="msg-time float-end">2 hrs
@@ -513,7 +515,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-10.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-10.png') }}" class="msg-avatar" alt="user avata
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Thomas Wheeler <span class="msg-time float-end">2 days
@@ -525,7 +527,7 @@
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
 												<div class="user-online">
-													<img src="{{ URL::asset('u/assets/images/avatars/avatar-11.png') }}" class="msg-avatar" alt="user avatar">
+													<img src="{{ URL::asset('u/assets/images/avatars/avatar-11.png') }}" class="msg-avatar" alt="user avata
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Johnny Seitz <span class="msg-time float-end">5 days
@@ -541,7 +543,7 @@
 								</div>
 							</li>
 						</ul>
-					</div>-->
+					</div>
 					<div class="user-box dropdown">
 						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #171717">
 							<!--<img src="{{ URL::asset('u/assets/images/logo-icon.png') }}" class="user-img" alt="user avatar">-->

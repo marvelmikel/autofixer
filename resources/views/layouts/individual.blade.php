@@ -15,6 +15,8 @@
 	<link href="{{ URL::asset('u/assets/plugins/highcharts/css/highcharts.css') }}" rel="stylesheet" />
 	<link href="{{ URL::asset('u/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
 	<link href="{{ URL::asset('u/assets/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-e87f1c80-3ae1-4bf0-86a8-623e43010974"></div>
 	<!-- loader-->
 	<link href="{{ URL::asset('u/assets/css/pace.min.css') }}" rel="stylesheet" />
 	<script src="{{ URL::asset('u/assets/js/pace.min.js')}}"></script>

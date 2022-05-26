@@ -9,7 +9,8 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-e87f1c80-3ae1-4bf0-86a8-623e43010974"></div>
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
