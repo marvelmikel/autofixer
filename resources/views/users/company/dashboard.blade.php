@@ -9,7 +9,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Wallet</p>
-                                <h5 class="mb-0">₦52,945</h5>
+                                <h5 class="mb-0">₦</h5>
                             </div>
                             <div class="ms-auto">	<i class='bx bx-wallet font-30'></i>
                             </div>
@@ -24,7 +24,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total Vehicles</p>
-                                <h5 class="mb-0">867</h5>
+                                <h5 class="mb-0"></h5>
                             </div>
                             <div class="ms-auto">	<i class='bx bx-cart font-30'></i>
                             </div>
@@ -39,7 +39,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total Repairs</p>
-                                <h5 class="mb-0">24</h5>
+                                <h5 class="mb-0"></h5>
                             </div>
                             <div class="ms-auto">	<i class='bx bx-group font-30'></i>
                             </div>
@@ -54,7 +54,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total Maintainance</p>
-                                <h5 class="mb-0">869</h5>
+                                <h5 class="mb-0"></h5>
                             </div>
                             <div class="ms-auto">	<i class='bx bx-chat font-30'></i>
                             </div>
@@ -89,7 +89,6 @@
                                         <th>Vehicle Year</th>
                                          <th>Vehicle VIN/Chassis Number</th>
                                           <th>Vehicle Registration Number</th>
-                                        <th>Status</th>
                                          <th>Date</th>
                                        <th>Actions</th>
                                    </tr>

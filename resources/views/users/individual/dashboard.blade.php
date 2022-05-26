@@ -75,7 +75,7 @@
                                 <h5 class="mb-1">Recent Vehicles </h5>
                             </div>
                             <div class="ms-auto">
-                                <a href="javscript:;" class="btn btn-primary btn-sm radius-30">Add Vehicle</a>
+                                <a href="{{ route('vechicles.create')}}" class="btn btn-primary btn-sm radius-30">Add Vehicle</a>
                             </div>
                         </div>
 
