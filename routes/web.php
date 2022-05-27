@@ -9,7 +9,6 @@ use App\Http\Controllers\Vechicle\AdminVechicleController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\IndividualController;
 
-use App\Http\Controllers\Profile\IController;
 
 
 //ADMIN CONTROLLERS

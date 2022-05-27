@@ -8,6 +8,7 @@ use App\Models\Individual;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Mail;
+use App\Models\CompanyVechicle;
 use App\Models\Service;
 use App\Models\Document;
 use App\Models\Repair;
@@ -35,10 +36,12 @@ class IndividualController extends Controller
   }
   public function home()
   {
-  //  if (Auth::check()) {
+    $user = User::find(Auth::user()->id);
+    $vechicles = $user->vechicles;
+    $repairs = $user->services;
 
     if (Auth::guard('individual')){
-    return view('users.individual.dashboard');
+    return view('users.individual.dashboard', compact('vechicles','repairs'));
     }
       return redirect('/individual/login');
 

@@ -29,7 +29,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total User Wallet</p>
-                                <h5 class="mb-0">₦100,945</h5>
+                                <h5 class="mb-0">₦</h5>
                             </div>
                             <div class="ms-auto">   <i class='bx bx-wallet font-30'></i>
                             </div>
@@ -44,7 +44,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total User Registered Vehicles</p>
-                                <h5 class="mb-0">867</h5>
+                                <h5 class="mb-0">{!! $vechicle->count() !!}</h5>
                             </div>
                             <div class="ms-auto">   <i class='bx bx-cart font-30'></i>
                             </div>
@@ -59,7 +59,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total User Repairs</p>
-                                <h5 class="mb-0">24</h5>
+                                <h5 class="mb-0">{!! $service->count() !!}</h5>
                             </div>
                             <div class="ms-auto">   <i class='bx bx-group font-30'></i>
                             </div>
@@ -74,7 +74,7 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <p class="mb-0">Total User Maintainance</p>
-                                <h5 class="mb-0">869</h5>
+                                <h5 class="mb-0">{!! $service->count() !!}</h5>
                             </div>
                             <div class="ms-auto">   <i class='bx bx-chat font-30'></i>
                             </div>
@@ -85,7 +85,7 @@
             </div>
       </div><!--end row-->
 
-
+<!-- 
         <div class="row">
             <div class="col">
                 <div class="card radius-10 mb-0">
@@ -121,7 +121,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--<div class="recent-product-img">
                                                 <img src="assets/images/products/15.png" alt="">
-                                            </div>-->
+                                            </div>--
                                             <div class="ms-2">
                                                 <h6 class="mb-1 font-14">BMW</h6>
                                             </div>
@@ -146,7 +146,7 @@
                                      <div class="d-flex align-items-center">
                                          <!--<div class="recent-product-img">
                                              <img src="assets/images/products/16.html" alt="">
-                                         </div>-->
+                                         </div>--
                                          <div class="ms-2">
                                              <h6 class="mb-1 font-14">Chevrolet</h6>
                                          </div>
@@ -172,7 +172,7 @@
                                      <div class="d-flex align-items-center">
                                          <!--<div class="recent-product-img">
                                              <img src="assets/images/products/19.png" alt="">
-                                         </div>-->
+                                         </div>--
                                          <div class="ms-2">
                                              <h6 class="mb-1 font-14">Cadillac</h6>
                                          </div>
@@ -202,7 +202,8 @@
                     </div>
                 </div>
             </div>
-        </div><!--end row-->
+        </div> -->
+        <!--end row-->
 
 
 @endsection

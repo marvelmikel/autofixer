@@ -1,3 +1,8 @@
+Autofixer.v1.6
+Bug fixed
+-Dashboards updated
+
+
 Autofixer.v1.5
 Bug fixed
 -Forgotten password
@@ -11,6 +16,7 @@ If the invoice/report file is above 40MB it wont send
 //what you are to run
 php artisan optimize
 php artisan migrate
+php artisan storage:link
 php artisan db:seed --class=CreateUsersSeeder
 
 

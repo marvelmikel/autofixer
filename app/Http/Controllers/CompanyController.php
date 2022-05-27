@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
  use App\Models\Repair;
  use App\Models\Service;
  use App\Models\Document;
+ use App\Models\CompanyVechicle;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -227,9 +228,12 @@ class CompanyController extends Controller
 
     public function home()
     {
+      $user = User::find(Auth::user()->id);
+        $vechicles = $user->vechicles;
+        $repairs = $user->services;
 
         if ('Auth'::guard('company')){
-      return view('users.company.dashboard');
+      return view('users.company.dashboard', compact('vechicles','repairs'));
         }
             return redirect('/company/login');
 

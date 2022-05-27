@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\CompanyVechicle;
 use App\Models\User;
+use App\Models\Service;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -18,7 +19,9 @@ class HomeController extends Controller
   
     public function index()
     {
-        return view('admin.home');
+        $service = Service::all();
+        $vechicle = CompanyVechicle::all();
+        return view('admin.home',compact('service','vechicle'));
     }
 
     
