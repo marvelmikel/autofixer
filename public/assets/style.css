@@ -14255,14 +14255,18 @@ ul {
 34. Demo Layout Thirty One
 =========================================================================*/
 .fxt-template-layout31 {
-  background-color: #ffffff;
+  background-color: #fffffd;
   padding: 110px;
   width: 100%;
   min-height: 100vh;
   display: -ms-grid;
+  background-image: url('https://autofixer.com.ng//static/images/banners/Banner2.jpg');
   display: grid;
   position: relative;
   z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media only screen and (max-width: 1199px) {
   .fxt-template-layout31 {
