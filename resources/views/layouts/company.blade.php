@@ -548,7 +548,7 @@
 						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #171717">
 							<!--<img src="{{ URL::asset('u/assets/images/logo-icon.png') }}" class="user-img" alt="user avatar">-->
 							<div class="user-info ps-3" >
-                                <p class="designattion mb-0" style="color: white">Hello</p>
+                                <p class="designattion mb-0" style="color: red">Hello</p>
 								<p class="user-name mb-0" style="color: white">{{Auth::user()->username}}</p>
 
 							</div>
