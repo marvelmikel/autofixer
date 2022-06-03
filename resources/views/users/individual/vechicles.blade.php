@@ -13,11 +13,14 @@
                     <div class="ms-auto">
                         <a href="{{ route('vechicles.create') }}" class="btn btn-primary btn-sm radius-30">Add Vehicle</a>
                     </div>
+                    <div class="ms-auto">
+                        <a href="{{ route('individual.dashboard') }}" class="btn btn-primary btn-sm radius-30">Dashboard</a>
+                    </div>
                 </div>
                <div class="table-responsive mt-3">
                    <table class="table align-middle mb-0">
                        <thead class="table-light">
-                     
+
                            <tr>
                                <th>#</th>
                                <th>Vechicle Make</th>
@@ -29,14 +32,14 @@
                                  <th>Date</th>
                                <th>Actions</th>
                            </tr>
-                          
+
                        </thead>
-                    
+
                        <tbody>
                        @if($vechicles->count() > 0)
                        @foreach($vechicles as $key=>$vechicle)
                            <tr>
-                               
+
                                <th>{{ $key + 1 }}</th>
                                <th>{{$vechicle->v_make}}</th>
                                <th>{{$vechicle->v_model}}</th>
@@ -46,7 +49,7 @@
 
                                  <th>{{ $vechicle->created_at->toFormattedDateString() }}</th>
                                <td>
-                                <div class="d-flex order-actions">	
+                                <div class="d-flex order-actions">
                                 <a href="{{ route('vechicles.edit',$vechicle->id) }}" class="ms-4 text-primary bg-light-primary border-0"><i class='bx bxs-edit' ></i></a>
 
 
@@ -54,12 +57,12 @@
 												@csrf
 												@method('DELETE')
 										<a href="javascript:;" onclick="deleteVechicle({{ $vechicle->id }})" class="text-danger bg-light-danger border-0">
-									
+
 									<button type="submit" class='bx bxs-trash'></button></a>
-									
+
 											</form>
 
-                                 
+
                                 </div>
                                </td>
                            </tr>
