@@ -155,24 +155,24 @@ class CompanyController extends Controller
 
     public function storeUser(Request $request)
     {
-        // $request->validate([
-        //       //company's information
-        //     'c_name' => 'required|string|max:255',
-        //     'c_address' => 'required|string|max:255',
-        //     'c_phone' => 'required|string|max:255',
-        //     'c_email' => 'required',
+        $request->validate([
+              //company's information
+            'c_name' => 'required|string|max:255',
+            'c_address' => 'required|string|max:255',
+            'c_phone' => 'required|string|max:255',
+            'c_email' => 'required|string|email|unique:users',
 
-        //    //personal's information
-        //      'p_name' => 'required|string|max:255',
-        //    'p_positon' => 'required|string|max:255',
-        //    'p_phone' => 'required|string|max:255',
-        //     'p_email' => 'required|',
+           //personal's information
+             'p_name' => 'required|string|max:255',
+           'p_positon' => 'required|string|max:255',
+           'p_phone' => 'required|string|max:255',
+            'p_email' => 'required|',
 
-        //      //Login information
-        //      'username' => 'required|string|max:255',
-        //     'password' => 'required|string|min:8|confirmed',
-        //     'password_confirmation' => 'required',
-        // ]);
+             //Login information
+             'username' => 'required|string|max:255',
+            'password' => 'required|string|min:8|confirmed',
+            'password_confirmation' => 'required',
+        ]);
 
         $user =  User::create([
             'c_name' => $request->c_name,
@@ -235,7 +235,7 @@ class CompanyController extends Controller
         if ('Auth'::guard('company')){
       return view('users.company.dashboard', compact('vechicles','repairs'));
         }
-            return redirect('/company/login');
+            return redirect('/company/login')->with('error', 'Try again');
 
     }
 

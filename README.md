@@ -1,5 +1,6 @@
-Autofixer.v1.6
+Autofixer.v1.7
 Bug fixed
+-Duplicated email error
 -Dashboards updated
 
 
@@ -31,3 +32,4 @@ php artisan db:seed --class=CreateUsersSeeder
  username :  company
  password : 123456
 
+# autofixer

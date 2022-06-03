@@ -88,7 +88,7 @@ class IndividualController extends Controller
             'name' => 'required|string|max:255',
             'city' => 'required|string|max:255',
             'phone' => 'required|string|max:255',
-            'email' => 'required',
+            'email' => 'required|string|email|unique:users',
 
              //Login information
              'username' => 'required|string|max:255',
@@ -112,8 +112,12 @@ class IndividualController extends Controller
           $message->subject('Welcome to AutoFixer');
           $message->from('info.autofixer@gmail.com');
       });
+if (condition) {
+  # code...
+}else {
+      return redirect('/individual/login');
+}
 
-        return redirect('/individual/login');
     }
 
 

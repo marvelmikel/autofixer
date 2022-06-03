@@ -137,8 +137,8 @@
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="form-group">
-                                        <input type="email" id="email" class="form-control @error('p_email') is-invalid @enderror" name="p_email" value="{{ old('p_email') }}"  placeholder="Personal Email" required="required"  autocomplete="p_email" autofocus>
-                                        @error('p_email')
+                                        <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" name="p_email" value="{{ old('email') }}"  placeholder="Personal Email" required="required"  autocomplete="email" autofocus>
+                                        @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
