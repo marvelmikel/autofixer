@@ -1,0 +1,146 @@
+<?php
+use function Lightroom\Templates\Functions\{controller};
+use function Lightroom\Requests\Functions\{session, cookie, get};
+use function Lightroom\Common\Functions\csrf;
+?><!-- Banner Section -->
+<section id="ms-banner-section" class="ms-abt-bnr ms-abt-bnr-6 team-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">Our Team</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" href="<?=web_url("/")?>">Home</a> / Our Team</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Our Team Page Content -->
+<section id="ms-team-page-section" class="ms-sec-padding ms-special-footer-pad">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ms-team-box">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-md-8 text-center text-md-left">
+							<h3 class="ms-font-lato font-weight-bold">Paul Akume</h3>
+							<h6 class="ms-font-4a4a4a ms-font-lato mb-4">Business Manager/Team Lead</h6>
+							<p>Paul is a dynamic Startup strategist with 4 years of developing and executing strategy to improve over 20 startups in Nigeria and Kenya. 
+								Whether working with executives to achieve peak performance or enterprise teams to innovate and accelerate business outcomes, Paul is a highly skilled facilitator and problem solver who posses excellent critical thinking and interpersonal communication skills.    
+								He is the Lead startup strategist and Business Manager at Autofixer solutions.</p>
+							<div class="ms-social-icon mt-3 mb-3 mb-md-0">
+								<a href="tel:07081845361" style="display: flex; align-items: center;"><i class="fa fa-phone ms-icon"></i> <span style="color: #000;">Speak to Paul</span></a>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images/team', 'paul.jpeg')?>" class="img-fluid" style="object-fit: cover; height: 300px; width: 300px; border-radius: 50%;" alt="Team Image">
+						</div>
+					</div>
+				</div>
+				<div class="ms-spacer-60"></div>
+				<div class="ms-team-box">
+					<div class="row align-items-center ">
+						<div class="col-md-8 text-center text-md-left">
+							<h3 class="ms-font-lato font-weight-bold">Luke Uwakmfon-Abasi Anietie</h3>
+							<h6 class="ms-font-4a4a4a ms-font-lato mb-4">Business Development Lead</h6>
+							<p>Luke is a dedicated, focused and excellent Business Developer with over 3 years’ experience developing Businesses across the IT and Defense industry.  He led the expansions and Business Development of LAMPCAD, a 21st century technology company providing IT solutions for organizations seeking to scale faster. Luke is interested in Future Tech, innovations for sustainable development and building a dynamic organizational culture. He is the Lead Business Developer at Autofixer Solutions.</p>
+							<div class="ms-social-icon mt-3 mb-3 mb-md-0">
+								<a href="tel:07036796632" style="display: flex; align-items: center;"><i class="fa fa-phone ms-icon"></i> <span style="color: #000;">Speak to Luke</span></a>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images/team', 'luke.jpeg')?>" class="img-fluid" style="object-fit: cover; height: 300px; width: 300px; border-radius: 50%;" alt="Team Image">
+						</div>
+					</div>
+				</div>
+				<div class="ms-spacer-60"></div>
+				<div class="ms-team-box">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-md-8 text-center text-md-left">
+							<h3 class="ms-font-lato font-weight-bold">Adewole Itunu</h3>
+							<h6 class="ms-font-4a4a4a ms-font-lato mb-4">Customer relations</h6>
+							<p>Itunu is vision driven, committed and exceptional Client relations Executives. Over the course of her professional career her work has helped a lot of organizations build and retain valuable relationships with their clients.  Itunu is also passionate about the food industry and dreams of owning her own food delivery Business someday. She is the head of Client relations at Autofixer and is dedicated to ensuring we deliver the best experience to our clients.</p>
+							<div class="ms-social-icon mt-3 mb-3 mb-md-0">
+								<a href="tel:07045543003" style="display: flex; align-items: center;"><i class="fa fa-phone ms-icon"></i> <span style="color: #000;">Speak to Itunu</span></a>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images/team', 'itunu.jpeg')?>" class="img-fluid" style="object-fit: cover; height: 300px; width: 300px; border-radius: 50%;" alt="Team Image">
+						</div>
+					</div>
+				</div>
+				<div class="ms-spacer-60"></div>
+				<div class="ms-team-box">
+					<div class="row align-items-center ">
+						<div class="col-md-8 text-center text-md-left">
+							<h3 class="ms-font-lato font-weight-bold">Olukayode Oyaniyi</h3>
+							<h6 class="ms-font-4a4a4a ms-font-lato mb-4">Technical Team Leader</h6>
+							<p>Kayode is an excellent automobile technician with over 15 year’s experience working on Automobiles. He is passionate about his work and takes it personal. He is admired for his resilience, dedication  and commitment to ensuring he exceeds client expectations and as well his ability to be a great Team player. Kayode is the Lead Technician at Autofixer and his goal is to ensure we have more happy and satisfied customers.</p>
+							<div class="ms-social-icon mt-3 mb-3 mb-md-0">
+								<a href="tel:07036794115" style="display: flex; align-items: center;"><i class="fa fa-phone ms-icon"></i> <span style="color: #000;">Speak to Kayode</span></a>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images/team', 'kayode.jpeg')?>" class="img-fluid" style="object-fit: cover; height: 300px; width: 300px; border-radius: 50%;" alt="Team Image">
+						</div>
+					</div>
+				</div>
+				<div class="ms-spacer-60"></div>
+				<div class="ms-team-box">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-md-8 text-center text-md-left">
+							<h3 class="ms-font-lato font-weight-bold">Helene Duruson</h3>
+							<h6 class="ms-font-4a4a4a ms-font-lato mb-4">Digital marketer</h6>
+							<p>Helene is a strategist and result driven marketer with extensive hands-on experience and demonstrated track record working with great organizations from setting strategic marketing goals to customer experience strategies. She started out in 2018, and since then she has gathered the skills and expertise necessary to accomplish goals and objectives.  
+
+								She's a Tech savvy, and When she's not working, you can usually find her volunteering to teach young women transitioning into Tech.  
+								
+								What drew her to Autofixer is the integrity of the team, and the drive to continue to do the next right thing for our customers.
+								“The automotive Industry is an ever-changing world and one of the best parts is always learning something new on a daily basis”.</p>
+							<div class="ms-social-icon mt-3 mb-3 mb-md-0">
+								<a href="tel:+2348187077000" style="display: flex; align-items: center;"><i class="fa fa-phone ms-icon"></i> <span style="color: #000;">Speak to Helene</span></a>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images/team', 'helene.jpeg')?>" class="img-fluid" style="object-fit: cover; height: 300px; width: 300px; border-radius: 50%;" alt="Team Image">
+						</div>
+					</div>
+				</div>
+				<div class="ms-spacer-60"></div>
+				<div class="ms-team-box">
+					<div class="row align-items-center ">
+						<div class="col-md-8 text-center text-md-left">
+							<h3 class="ms-font-lato font-weight-bold">Jones olumide</h3>
+							<h6 class="ms-font-4a4a4a ms-font-lato mb-4">Intern</h6>
+							<p>Jones is an exceptional manager and analytical problem-solver with talents for team building, leading and motivating, as well as excellent customer relations aptitude, and relationship-building skills. He is proficient in using independent decision-making skills and sound judgment to positively impact the company’s. success. Jones is the assistant technician that enable us render a top notch service to our client. His goal is to drive the company’s growth by delivering an outstanding customer service.</p>
+							<div class="ms-social-icon mt-3 mb-3 mb-md-0">
+								<!-- <a href="tel:07036794115" style="display: flex; align-items: center;"><i class="fa fa-phone ms-icon"></i> <span style="color: #000;">Speak to Kayode</span></a> -->
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images/team', 'jones.jpeg')?>" class="img-fluid" style="object-fit: cover; height: 300px; width: 300px; border-radius: 50%;" alt="Team Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="row" style="margin-top: 90px;">
+			<div class="col-md-12 text-center">
+				<h2 class="ms-font-weight-900">BOARD OF DIRECTORS</h2>
+				<h4 class="ms-font-4a4a4a mb-4 mb-md-5">They also make autofixer a one stop solution center for your car</h4>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 30px;">
+			<div class="col-md-4 mb-4 mb-md-0">
+				<div class="ms-team-box text-center rounded position-relative" style="padding: 10px; padding-top: 30px;">
+					<img class="" style="height: 200px; width: 200px; object-fit: cover; border-radius: 50%;" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'team-11.png')?>" alt="Team Image">
+					<p class="ms-font-21 ms-font-lato font-weight-bold mt-4 mb-0 ms-font-111">Idowu Banjo</p>
+					<h6 class="ms-font-4a4a4a ms-font-roboto-slab mb-4">CEO & Founder</h6>	
+				</div>
+			</div>
+		</div> -->
+	</div>
+</section>
