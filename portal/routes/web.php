@@ -132,7 +132,11 @@ Route::resource('vechicles',IndividualVechicleController::class)->middleware('au
 //Admin Urls
 Route::get('post', [BlogController::class, 'post'])->name('blog.post.index');
 Route::post('postblog',  [BlogController::class, 'postblog']);
+Route::get('edit-blog/{id}', [BlogController::class,'editBlog']);
+Route::put('edit-blog/{id}', [BlogController::class,'updateBlog']);
+Route::delete('delete-blog/{id}',[BlogController::class,'deleteBlog'])->name('deleteBlog');
 Route::get('comment', [BlogController::class, 'comment'])->name('blog.comment.index');
+Route::delete('/comments/{id}',[BlogController::class,'deleteComment'])->name('deleteComment');
 Route::prefix('admin')->group(function () {
 
     //ADMIN COMPANY URLS

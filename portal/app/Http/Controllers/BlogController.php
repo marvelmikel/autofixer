@@ -11,7 +11,8 @@ class BlogController extends Controller
 {
     public function post() {
 
-        return view('admin.blog.post.index');
+        $blogs = Blog::all();
+        return view('admin.blog.post.index', compact('blogs'));
     }
 
     public function postblog(Request $request)
@@ -38,7 +39,7 @@ class BlogController extends Controller
         $blogPost=new Blog;
         $blogPost->title=$title;
         $blogPost->author='AUTOFIXER';
-        $blogPost->image = $image;
+        $blogPost->image = $imageName;
         $blogPost->content=$content;
         if($blogPost->save()){
             return redirect()->route('blog.post.index');
@@ -73,9 +74,53 @@ class BlogController extends Controller
         return $recentBlog;
     }
 
+    //Edit Blog
+    public function editBlog($id){
+        $findBlog = Blog::findOrFail($id);
+        return view('admin.blog.post.edit-blog',compact('findBlog'));
+
+      }
+
+      //Update Blog
+      public function updateBlog(Request $request, $id)
+      {
+        $findBlog = Blog::findOrFail($id);
+        $image = $request->file('image');
+       if($image){
+       $imageName = time().'.'.$image->getClientOriginalExtension();
+       $destinationPath = public_path('/blog_images');
+       $image->move($destinationPath, $imageName);
+       $findBlog->image = $imageName;
+    }
+
+        $findBlog->title=request('title');
+        $findBlog->content=request('content');
+        $findBlog->image = $imageName;
+        $findBlog->update();
+        $notify[] = ['success', 'Blog Data Updated successfully'];
+        return redirect("/post")->withNotify($notify);
+    }
+
+    //Delete Blog
+    public function deleteBlog($id)
+{
+    Blog::destroy($id);
+    return redirect()->back()->with('success', 'Blog Data Deleted successfully');
+}
+
+//Delete Comments
+public function deleteComment($id)
+{
+    Comment::destroy($id);
+    return redirect()->back()->with('success', 'Comments Data Deleted successfully');
+
+}
+
+
 
     public function comment() {
-        return view('admin.blog.comment.index');
+        $comments = Comment::with('blog')->get();
+        return view('admin.blog.comment.index', compact('comments'));
     }
 
     //Post Comment on Blog
@@ -91,6 +136,7 @@ class BlogController extends Controller
             return ["result"=>"Comment was not successful"];
         }
     }
+
 
     // Get User Comments on Blog
     public function getComments($id=null)
