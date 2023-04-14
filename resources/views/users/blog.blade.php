@@ -279,7 +279,7 @@
                             © Copyright 2022 - 2023. Autofixer <br /> Nigeria limited. Site by FregateLab
                         </p>
                     </div>
-                    <div class="col bg-danger p-5">
+                    <div class="col  p-5" style="background-color: #fc0000">
                         <h3>Contact</h3>
                         <p class="footer-details">
                             Call :
